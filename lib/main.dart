@@ -17,7 +17,7 @@ class Toku extends StatelessWidget {
     return MaterialApp(
       home: const HomePage(),
       routes: {
-        '/numbers page': (context) => const NumbersPage(),
+        '/numbers page': (context) => NumbersPage(),
         '/family members page': (context) => const FamilyMembers(),
         '/colors page': (context) => const ColorsPage(),
         '/phrases page': (context) => const PhrasesPage(),
