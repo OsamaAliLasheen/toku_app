@@ -23,18 +23,31 @@ class HomePage extends StatelessWidget {
             Category(
               text: 'Numbers',
               color: const Color(0xFFF99532),
+              onTap: () {
+                print('tapped');
+                Navigator.pushNamed(context, '/numbers page');
+              },
             ),
             Category(
               text: 'Family Members',
               color: const Color(0xFF528031),
+              onTap: () {
+                Navigator.pushNamed(context, '/family members page');
+              },
             ),
             Category(
               text: 'Colors',
               color: const Color(0xFF7D40A2),
+              onTap: () {
+                Navigator.pushNamed(context, '/colors page');
+              },
             ),
             Category(
               text: 'Phrases',
               color: const Color(0xFF47A5CB),
+              onTap: () {
+                Navigator.pushNamed(context, '/phrases page');
+              },
             ),
           ],
         ),
