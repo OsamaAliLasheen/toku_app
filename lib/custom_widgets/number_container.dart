@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:toku_app/models/Number.dart';
+import 'package:toku_app/models/number.dart';
 
 class NumbersContainer extends StatelessWidget {
   NumbersContainer({required this.number});
