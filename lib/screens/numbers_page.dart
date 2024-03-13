@@ -7,8 +7,48 @@ class NumbersPage extends StatelessWidget {
 
   Number one = const Number(
     image: 'assets/images/numbers/number_one.png',
-    jpName: 'ichi',
-    engName: 'one',
+    jpName: 'Ichi',
+    engName: 'One',
+  );
+  Number two = const Number(
+    image: 'assets/images/numbers/number_two.png',
+    jpName: 'Ni',
+    engName: 'Two',
+  );
+  Number three = const Number(
+    image: 'assets/images/numbers/number_three.png',
+    jpName: 'San',
+    engName: 'Three',
+  );
+  Number four = const Number(
+    image: 'assets/images/numbers/number_four.png',
+    jpName: 'Shi',
+    engName: 'Four',
+  );
+  Number five = const Number(
+    image: 'assets/images/numbers/number_five.png',
+    jpName: 'Go',
+    engName: 'Five',
+  );
+  Number six = const Number(
+    image: 'assets/images/numbers/number_six.png',
+    jpName: 'Roku',
+    engName: 'Six',
+  );
+  Number seven = const Number(
+    image: 'assets/images/numbers/number_seven.png',
+    jpName: 'Sebun',
+    engName: 'Seven',
+  );
+  Number eight = const Number(
+    image: 'assets/images/numbers/number_eight.png',
+    jpName: 'Hachi',
+    engName: 'Eight',
+  );
+  Number nine = const Number(
+    image: 'assets/images/numbers/number_nine.png',
+    jpName: 'Kyu',
+    engName: 'Nine',
   );
 
   @override
@@ -28,16 +68,28 @@ class NumbersPage extends StatelessWidget {
               number: one,
             ),
             NumbersContainer(
-              number: one,
+              number: two,
             ),
             NumbersContainer(
-              number: one,
+              number: three,
             ),
             NumbersContainer(
-              number: one,
+              number: four,
             ),
             NumbersContainer(
-              number: one,
+              number: five,
+            ),
+            NumbersContainer(
+              number: six,
+            ),
+            NumbersContainer(
+              number: seven,
+            ),
+            NumbersContainer(
+              number: eight,
+            ),
+            NumbersContainer(
+              number: nine,
             ),
           ],
         ));
