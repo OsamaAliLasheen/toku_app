@@ -70,39 +70,11 @@ class NumbersPage extends StatelessWidget {
                 color: Colors.white, fontWeight: FontWeight.bold, fontSize: 24),
           ),
         ),
-        body: ListView(
-          children: [
-            NumbersContainer(
-              number: numbers[0],
-            ),
-            NumbersContainer(
-              number: numbers[1],
-            ),
-            NumbersContainer(
-              number: numbers[2],
-            ),
-            NumbersContainer(
-              number: numbers[3],
-            ),
-            NumbersContainer(
-              number: numbers[4],
-            ),
-            NumbersContainer(
-              number: numbers[5],
-            ),
-            NumbersContainer(
-              number: numbers[6],
-            ),
-            NumbersContainer(
-              number: numbers[7],
-            ),
-            NumbersContainer(
-              number: numbers[8],
-            ),
-            NumbersContainer(
-              number: numbers[9],
-            ),
-          ],
+        body: ListView.builder(
+          itemCount: numbers.length,
+          itemBuilder: (context, num) {
+            return NumbersContainer(number: numbers[num]);
+          },
         ));
   }
 }
