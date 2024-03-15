@@ -1,24 +1,23 @@
 import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
-import 'package:toku_app/models/number.dart';
+import 'package:toku_app/models/item.dart';
 
-class NumbersContainer extends StatelessWidget {
-  NumbersContainer({required this.number});
-  final Number number;
+class ItemContainer extends StatelessWidget {
+  const ItemContainer({required this.item, required this.color});
+  final ItemModel item;
+  final Color? color;
 
   @override
   Widget build(BuildContext context) {
     return Container(
       height: 90,
-      decoration: const BoxDecoration(
-        color: Colors.orange,
-      ),
+      color: color,
       child: Row(
         children: [
           Container(
             decoration: const BoxDecoration(color: Color(0xffFFF4DB)),
             child: Image.asset(
-              number.image!,
+              item.image!,
             ),
           ),
           Padding(
@@ -27,11 +26,11 @@ class NumbersContainer extends StatelessWidget {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Text(
-                  number.jpName!,
+                  item.jpName!,
                   style: const TextStyle(color: Colors.white, fontSize: 22),
                 ),
                 Text(
-                  number.engName!,
+                  item.engName!,
                   style: const TextStyle(color: Colors.white, fontSize: 22),
                 ),
               ],
@@ -51,7 +50,7 @@ class NumbersContainer extends StatelessWidget {
               onPressed: () {
                 print('tapped');
                 final player = AudioPlayer();
-                player.play(AssetSource(number.sound!));
+                player.play(AssetSource(item.sound!));
               },
             ),
           )
