@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 import 'package:toku_app/models/number.dart';
 
@@ -47,7 +48,11 @@ class NumbersContainer extends StatelessWidget {
                 size: 30,
               ),
               color: Colors.white,
-              onPressed: () {},
+              onPressed: () {
+                print('tapped');
+                final player = AudioPlayer();
+                player.play(AssetSource(number.sound!));
+              },
             ),
           )
         ],

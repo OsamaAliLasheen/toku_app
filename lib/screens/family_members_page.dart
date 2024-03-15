@@ -1,3 +1,4 @@
+import 'package:audioplayers/audioplayers.dart';
 import 'package:flutter/material.dart';
 
 class FamilyMembers extends StatelessWidget {
@@ -5,6 +6,19 @@ class FamilyMembers extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Placeholder();
+    return MaterialApp(
+      home: Scaffold(
+        appBar: AppBar(
+          title: Text('Family Member'),
+        ),
+        body: ElevatedButton(
+            onPressed: () {
+              print('tapped');
+              final player = AudioPlayer();
+              player.play(AssetSource('sounds/numbers/number_eight_sound.mp3'));
+            },
+            child: Text('WHY!!!!!!')),
+      ),
+    );
   }
 }

@@ -24,7 +24,6 @@ class HomePage extends StatelessWidget {
               text: 'Numbers',
               color: const Color(0xFFF99532),
               onTap: () {
-                print('tapped');
                 Navigator.pushNamed(context, '/numbers page');
               },
             ),
