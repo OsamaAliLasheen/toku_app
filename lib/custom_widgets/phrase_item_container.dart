@@ -12,11 +12,9 @@ class PhraseItemContainer extends StatelessWidget {
     return Container(
       height: 90,
       color: color,
-      child: SingleChildScrollView(
-        child: ItemInfo(
-          item: item,
-          color: const Color(0xFF47A5CB),
-        ),
+      child: ItemInfo(
+        item: item,
+        color: const Color(0xFF47A5CB),
       ),
     );
   }

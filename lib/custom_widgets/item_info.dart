@@ -14,19 +14,26 @@ class ItemInfo extends StatelessWidget {
       children: [
         Padding(
           padding: const EdgeInsets.only(left: 16.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            crossAxisAlignment: CrossAxisAlignment.start,
-            children: [
-              Text(
-                item.jpPhrase!,
-                style: const TextStyle(color: Colors.white, fontSize: 22),
+          child: SizedBox(
+            height: 90,
+            width: MediaQuery.of(context).size.width - 90,
+            child: SingleChildScrollView(
+              scrollDirection: Axis.horizontal,
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    item.jpPhrase!,
+                    style: const TextStyle(color: Colors.white, fontSize: 22),
+                  ),
+                  Text(
+                    item.engPhrase!,
+                    style: const TextStyle(color: Colors.white, fontSize: 22),
+                  ),
+                ],
               ),
-              Text(
-                item.engPhrase!,
-                style: const TextStyle(color: Colors.white, fontSize: 22),
-              ),
-            ],
+            ),
           ),
         ),
         Padding(
