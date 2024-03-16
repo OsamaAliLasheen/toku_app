@@ -5,7 +5,7 @@ class Category extends StatelessWidget {
 
   final String? text;
   final Color? color;
-  Function()? onTap;
+  final Function()? onTap;
 
   @override
   Widget build(BuildContext context) {

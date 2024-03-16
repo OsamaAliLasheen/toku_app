@@ -20,7 +20,7 @@ class Toku extends StatelessWidget {
         '/numbers page': (context) => NumbersPage(),
         '/family members page': (context) => FamilyMembersPage(),
         '/colors page': (context) => ColorsPage(),
-        '/phrases page': (context) => const PhrasesPage(),
+        '/phrases page': (context) => PhrasesPage(),
       },
     );
   }

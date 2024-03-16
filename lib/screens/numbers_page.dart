@@ -2,8 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:toku_app/custom_widgets/item_container.dart';
-import 'package:toku_app/models/item.dart';
-import 'package:toku_app/models/number.dart';
+import 'package:toku_app/models/item_model.dart';
 
 class NumbersPage extends StatelessWidget {
   NumbersPage({super.key});
